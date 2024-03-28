@@ -1,0 +1,32 @@
+
+### Getting the Employee details 
+GET http://localhost:4004/connectdbdatadisplay/employeed HTTP/1.1
+
+### Create Employee
+POST http://localhost:4004/connectdbdatadisplay/employeed HTTP/1.1
+Content-Type: application/json
+
+    {
+      
+      "fname": "m",
+      "lname": "chandu",
+      "dob": "1999-01-01",
+      "email": "gan@gmail.com",
+      "phonenumber": "7780625494",
+      "address_ID": null
+    
+    }
+
+###Get Employee Along With Address
+GET http://localhost:4004/connectdbdatadisplay/employeed?$expand=address HTTP/1.1
+
+
+### Get Pagination
+GET http://localhost:4004/connectdbdatadisplay/employeed?$expand=address&$top=20&$skip=0 HTTP/1.1
+
+
+### Get Filter
+GET http://localhost:4004/connectdbdatadisplay/employeed?$expand=address&$filter=fname eq 'madupu' HTTP/1.1
+
+### Get Single Employee
+GET http://localhost:4004/connectdbdatadisplay/employeed/1213234 HTTP/1.1

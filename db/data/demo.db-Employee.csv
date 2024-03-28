@@ -1,4 +1,2 @@
-ID,fName,lName,dob 
-
-1885ba66-eb3d-11ee-a419-325096b39f47,Madupu,Gayathri,1999-10-14
-766453e8-3117-4846-b8d5-f003d0a6b56d,Mdpu,Laxmi,1999-01-01
+ID,fname,lname,dob,email,phonenumber,address_ID
+1213234,madupu, ganesh,1999-01-01,435678943,777666
